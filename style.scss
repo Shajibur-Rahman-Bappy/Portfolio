@@ -1,38 +1,47 @@
 $primary : #fd6e0a;
 $secondary : #fff8ff;
-header{
+
+header {
     background-color: $secondary;
+    background-image: url("/images/developer.png"),url("/images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
 }
-nav{
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 200px;
 }
-nav h3{
+
+nav h3 {
     font-size: 50px;
-    
+
 }
-#special{
+
+#special {
     color: $primary;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     margin-left: 100px;
     font-size: 25px;
+    color: black;
 }
-.firstPart{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: $secondary;
-}
-.btnPrimary{
+
+.btnPrimary {
     margin-left: 100px;
     background-color: $primary;
     font-size: 20px;
@@ -40,162 +49,197 @@ nav ul li a{
     border: none;
     padding: 18px 35px;
     border-radius: 5px;
+    cursor: pointer;
 }
-#hi{
+
+#hi {
     font-size: 35px;
-    font-weight:lighter;
+    font-weight: lighter;
     color: #474747;
 }
-#nam{
+
+#nam {
     font-size: 80px;
 }
-#para{
+
+#para {
     font-size: 20px;
 }
-.textContainer{
+
+.textContainer {
     margin: 0 200px;
 }
-.btnPrimary1{
+
+.btnPrimary1 {
     background-color: $primary;
     font-size: 20px;
     color: white;
     border: none;
     padding: 18px 35px;
     border-radius: 5px;
+    cursor: pointer;
 }
-.fa-phone{
-    margin-right: 5px;   
-}
-.imgContainer{
-    margin: 0 20px;
-    background-image: url('/images/header_bg.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
 
+.fa-phone {
+    margin-right: 5px;
 }
-.Container1{
+
+.imgContainer {
+    margin: 0 20px;
+}
+.imgContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Container1 {
     margin: 200px 300px;
     background-color: $secondary;
     text-align: center;
 
 }
-.Container1 h3{
+
+.Container1 h3 {
     font-size: 35px;
     padding: 100px;
 }
-.Container1 p{
+
+.Container1 p {
     font-size: 20px;
     text-align: center;
     padding: 0 150px;
 }
-.midContainer{
+
+.midContainer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 150px;
 }
-.midContainer h2{
+
+.midContainer h2 {
     font-size: 20px;
 
 }
-.midContainer h1{
+
+.midContainer h1 {
     font-weight: lighter;
     font-size: 20px;
 }
-.Container2{
+
+.Container2 {
     padding: 0 300px;
 }
-.Container2 h1{
+
+.Container2 h1 {
     text-align: center;
     font-size: 35px;
     padding: 20px;
 }
-.Container2 p{
+
+.Container2 p {
     font-size: 20px;
 }
-#ss{
+
+#ss {
     text-align: center;
 }
-.skillContainer{
+
+.skillContainer {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: space-evenly;
 }
-.skill1{
+
+.skill1 {
     border: none;
     background-color: whitesmoke;
     padding: 30px;
 }
-.skill1 h1{
+
+.skill1 h1 {
     font-size: 20px;
     display: flex;
     padding: 0px;
 }
-.skill2{
+
+.skill2 {
     border: none;
     background-color: whitesmoke;
     padding: 30px;
 }
-.skill2 h1{
+
+.skill2 h1 {
     font-size: 20px;
     display: flex;
     padding: 0px;
 }
-.skill3{
+
+.skill3 {
     border: none;
     background-color: whitesmoke;
     padding: 30px;
 }
-.skill3 h1{
+
+.skill3 h1 {
     font-size: 20px;
     display: flex;
     padding: 0px;
 }
-.skill4{
-    border:none;
+
+.skill4 {
+    border: none;
     background-color: whitesmoke;
     padding: 30px;
 }
-.skill4 h1{
+
+.skill4 h1 {
     font-size: 20px;
     display: flex;
     padding: 0px;
 }
-.Container3{
+
+.Container3 {
     padding: 0 300px;
     margin-top: 150px;
 }
-.Container3 h1{
+
+.Container3 h1 {
     text-align: center;
     font-size: 35px;
     margin-bottom: 50px;
 }
-.summary{
+
+.summary {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
-.summary h2{
+
+.summary h2 {
     font-size: 20px;
 
 }
-.summary h3{
+
+.summary h3 {
     font-size: 18px;
 }
-.summary h4{
+
+.summary h4 {
     font-size: 25px;
     font-weight: lighter;
     color: darkgray;
 }
-.summary p{
+
+.summary p {
     font-size: 20px;
     text-align: justify;
     font-weight: lighter;
     color: darkgray;
 }
-.btnPrimary2{
+
+.btnPrimary2 {
     background-color: $primary;
     font-size: 20px;
     color: white;
@@ -204,39 +248,68 @@ nav ul li a{
     border-radius: 5px;
     display: block;
     margin: 50px auto 0;
+    cursor: pointer;
 }
-.Container4{
+
+.Container4 {
     margin-top: 50px;
     background-color: $secondary;
 }
-.foter{
+
+.foter {
     padding: 150px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
-.logoContainer h1{
+
+.logoContainer h1 {
     font-size: 35px;
 }
-.logoContainer p{
+
+.logoContainer p {
     font-size: 18px;
     text-align: justify;
     width: 80%;
 }
-.formContainer h1{
-    font-size: 35px;    
+
+.formContainer h1 {
+    font-size: 35px;
 }
-.formContainer input , textarea{
+
+.formContainer input,
+textarea {
     width: 80%;
     height: 50px;
     margin-bottom: 20px;
     padding: 10px;
 }
-.btnPrimary3{
+
+.btnPrimary3 {
     background-color: $primary;
     font-size: 20px;
     color: white;
     border: none;
     padding: 18px 35px;
     border-radius: 5px;
+    cursor: pointer;
 }
+.error {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+.to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1000;
+}
+  
