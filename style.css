@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 .imgContainer img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -308,4 +308,107 @@ textarea {
   text-decoration: none;
   font-size: 14px;
   z-index: 1000;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    margin: 0 100px;
+  }
+  .textContainer {
+    margin: 0 100px;
+  }
+  .Container1 {
+    margin: 100px 150px;
+  }
+  .Container2 {
+    padding: 0 150px;
+  }
+  .Container3 {
+    padding: 0 150px;
+  }
+  .foter {
+    padding: 100px;
+    grid-template-columns: 1fr;
+  }
+  .formContainer input,
+  textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul li a {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .textContainer {
+    margin: 0 50px;
+  }
+  .midContainer {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .skillContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Container1 {
+    margin: 50px;
+  }
+  .Container2 {
+    padding: 0 50px;
+  }
+  .Container3 {
+    padding: 0 50px;
+  }
+  .foter {
+    padding: 50px;
+  }
+}
+@media (max-width: 480px) {
+  nav h3 {
+    font-size: 30px;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
+  .btnPrimary,
+  .btnPrimary1,
+  .btnPrimary2,
+  .btnPrimary3 {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .textContainer {
+    margin: 0 20px;
+  }
+  .midContainer {
+    padding: 20px;
+  }
+  .skillContainer {
+    grid-template-columns: 1fr;
+  }
+  .Container1 {
+    margin: 20px;
+  }
+  .Container2 {
+    padding: 0 20px;
+  }
+  .Container3 {
+    padding: 0 20px;
+  }
+  .foter {
+    padding: 20px;
+  }
+  .formContainer input,
+  textarea {
+    width: 100%;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
