@@ -293,6 +293,10 @@ textarea {
     padding: 18px 35px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btnPrimary3:hover {
+    background-color: darken($primary, 10%);
 }
 .error {
     display: block;
